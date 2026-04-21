@@ -46,7 +46,7 @@ Jika kode dijalankan, akan **terjadi error** `Undefined name 'counter'`. Hal ini
 Kita harus mendeklarasikan variabel `counter` (misalnya dengan tipe integer dan nilai awal 0) sebelum statement `while` dieksekusi.
 
 ```dart
-int counter = 0; // Menambahkan deklarasi dan inisialisasi variabel
+int counter = 0;
 while (counter < 33) {
   print(counter);
   counter++;
@@ -66,7 +66,9 @@ do {
   counter++;
 } while (counter < 77);
 ```
-
+hasil pengerjaan:
+<img src="assets/images/prak2.1.png" alt="ss pengerjaan praktikum 2" width="300">
+<img src="assets/images/prak2.2.png" alt="ss pengerjaan praktikum 2" width="300">
 ---
 
 ## Praktikum 3: Menerapkan Perulangan "for" dan "break-continue"
@@ -105,7 +107,8 @@ for (int index = 10; index < 27; index++) {
 *(Catatan hasil eksekusi: Secara logika, saat kode jalankan **tidak akan ada output teks (angka) apapun yang dicetak ke layar**. Hal ini karena iterasi angka `index` dimulai dari `10`. Mengingat angka 10 dst itu jauh lebih besar dari angka 1, kondisi di percabangan `(index > 1 || index < 7)` akan menjadi **selalu terpenuhi (true)**. Hal ini memicu command `continue` membatalkan/ngeskip print() yang berada di bawahnya lalu menaikkannya ke iterasi yang baru dari rentang angka 10 sampai angka berhenti menjadi 21 karena di-`break`... Pada perulangan ini, metode print "terlewarkan" terus menerus.)*
 
 ---
-
+hasil pengerjaan:
+<img src="assets/images/prak3.png" alt="ss pengerjaan praktikum 3" width="300">
 ## Tugas Praktikum
 
 Pada tugas praktikum ini, saya membuat program Dart yang bertugas untuk menampilkan bilangan prima dari rentang angka 0 hingga 201. Sesuai instruksi, secara beriringan program juga akan menampilkan Nama Lengkap dan NIM setiap kali bilangan prima tersebut ditemukan.
@@ -148,4 +151,6 @@ bool isPrime(int number) {
 4. Di dalam fungsi `isPrime()`, jika angka `< 2` maka langsung divonis bukan bilangan prima. Kemudian, program menggunakan loop mulai angka `2` hingga setengah dari nilai yang dievaluasi (`number ~/ 2`) untuk mengecek apakah `number` habis dibagi dengan salah satu angka di rentang iterasi tersebut. Jika **habis dibagi (`% == 0`)**, maka angka tersebut juga vonis bilangan komposit/bukan prima dan *return* membalikkan `false`. Jika tidak ada yang bersisa `0`, maka bernilai **sebagai bilangan prima**, *return* dikembalikan `true`.
 5. Apabila output dari fungsi `isPrime()` bernilai **true**, maka statement `if (isPrime(i))` di dalam *loop* utama akan dijalankan, yang mana akan menampilkan angka bilangannya (`i`), Nama `Rifqi Hilmi Mubarok`, dan NIM `244107060110` secara bersama-sama di layar terminal.
 
-Untuk mengumpulkannya di GitHub, Anda bisa melakukan *commit* isi folder yang sudah dikerjakan ini (`README.md` yang telah direvisi dan diisikan *screenshot* dari hasil running Anda sendiri, beserta file-file `.dart`).
+hasil pengerjaan:
+<img src="assets/images/tugas.png" alt="ss pengerjaan praktikum 2" width="300">
+<img src="assets/images/tugas1.png" alt="ss pengerjaan praktikum 2" width="300">
